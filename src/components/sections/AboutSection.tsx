@@ -19,7 +19,7 @@ export default function AboutSection() {
               <div className="absolute inset-0 border-2 border-[#27272A] rounded-sm transform translate-x-4 translate-y-4"></div>
               <div className="absolute inset-0 bg-[#18181B] rounded-sm overflow-hidden z-10">
                 <img
-                  src="/profile/shane-profile.jpg"
+                  src="/profile/shane-profile1.jpg"
                   alt="Shane Dedil Deuna"
                   className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-500 grayscale hover:grayscale-0"
                   onError={(e) => {
