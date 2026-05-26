@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #DC143C;
+  --color-secondary: #991B1B;
+  --color-background: #0F0F0F;
+  --color-card: #18181B;
+  --color-border: #27272A;
+  --color-foreground: #FFFFFF;
+  --color-muted: #A1A1AA;
+  --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --background: #0F0F0F;
+  --foreground: #FFFFFF;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DC143C;
+}
+
+/* Loading Screen Animation utilities */
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(220, 20, 60, 0.4), 0 0 20px rgba(220, 20, 60, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(220, 20, 60, 0.8), 0 0 30px rgba(220, 20, 60, 0.5);
+  }
+}
+.animate-pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* Base utility for components */
+.glass-panel {
+  background: rgba(24, 24, 27, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid #27272A;
+}
